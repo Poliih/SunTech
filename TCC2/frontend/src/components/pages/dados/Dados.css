@@ -1,0 +1,38 @@
+.shape-container {
+  display: flex; 
+  width: 100%; 
+  justify-content: space-between;
+}
+
+.page-title {
+  font-size: 2rem; 
+  color: #1E646E; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  padding-top: 40px;
+}
+
+.shape-container > * {
+  flex: 1; 
+  margin: 0 10px; 
+  min-width: 0; 
+}
+
+.shape-container > *:first-child {
+  margin-left: 0; 
+}
+
+.shape-container > *:last-child {
+  margin-right: 0; 
+}
+
+@media (max-width: 768px) {
+  .shape-container {
+    flex-direction: column; 
+  }
+
+  .shape-container > * {
+    margin: 10px 0; 
+  }
+}

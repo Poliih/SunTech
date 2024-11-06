@@ -1,0 +1,10 @@
+.chart-container {
+  width: 100%; 
+  max-width: 990px; 
+  margin-top: 0px auto; 
+  padding: 10px; 
+  background-color: #f8f9fa;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+

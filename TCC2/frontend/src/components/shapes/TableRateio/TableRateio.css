@@ -1,0 +1,77 @@
+.MuiTableHead-root {
+    border-bottom: 1px solid #1E646E; 
+}
+
+.MuiTableCell-head {
+    padding: 5px; 
+    font-weight: bold;
+    background-color: #E0F7FA; 
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 16px; 
+    margin-block-end: -25px;
+}
+
+.table-container {
+    justify-content: space-between; 
+    border-radius: 8px; 
+}
+
+.table-header h2 {
+    margin: 0; 
+    font-size: 1.2rem; 
+    color: #1E646E; 
+    font-weight: bold; 
+    align-items: center;
+}
+
+.table-header .additional-info {
+    font-size: 1rem; 
+    color: #555; 
+}
+
+.ellipsis-container {
+    display: flex; 
+    align-items: center; 
+}
+
+h2 {
+    margin: 0; 
+}
+
+.table-filters {
+    margin-top: 0px;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    align-items: flex-start;
+}
+
+.filter-item {
+    flex: 1; 
+    margin: 5px; 
+    min-width: 300px; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    padding: 10px; 
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.custom-autocomplete .MuiOutlinedInput-root {
+    & fieldset {
+        border-color: #1E646E; 
+    }
+    
+    &:hover fieldset {
+        border-color: #1E646E; 
+    }
+    
+    &.Mui-focused fieldset {
+        border-color: #1E646E; 
+    }
+}

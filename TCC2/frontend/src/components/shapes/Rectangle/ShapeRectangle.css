@@ -1,0 +1,64 @@
+/* Importe a fonte Plus Jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+.ShapeRectangle {
+  width: 420px; 
+  height: 150px; 
+  background: #1E646E; 
+  border-radius: 20px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: width 0.3s ease; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+.ShapeRectangle .info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  color: white; 
+  font-size: 1.1rem; 
+  padding: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.ShapeRectangle .info .titulo {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  font-weight: bold; 
+}
+
+.ShapeRectangle .info .valor {
+  font-size: 1.2rem; 
+
+.ShapeRectangle .info .comparativo {
+  font-size: 0.9rem; 
+  display: flex; 
+  align-items: center; 
+  color: #808080; 
+}
+
+@media (min-width: 1920px) {
+  .ShapeRectangle{
+    width: 425px; 
+    height: 180px;
+  }
+ 
+  .ShapeRectangle .info .valor {
+    font-size: 1.2rem; 
+  }
+  
+  .ShapeRectangle .info .titulo {
+    font-size: 1.2rem; 
+  }
+  
+  .ShapeRectangle .info .comparativo {
+    font-size: 1.1rem; 
+  }
+}
+}

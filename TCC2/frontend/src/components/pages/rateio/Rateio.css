@@ -1,0 +1,26 @@
+  .page-title2{
+    font-size: 2rem; 
+    color: #1E646E; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    padding-top: 40px;
+  }
+    
+  .shapeR-container > * {
+    flex: 1; 
+    margin: 0 10px; 
+    min-width: 0; 
+  }
+  
+  @media (max-width: 768px) {
+    .shapeR-container {
+      flex-direction: column; 
+
+    }
+  
+    .shapeR-container > * {
+      margin: 10px 0; 
+    }
+  }
+  

@@ -1,0 +1,303 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .menu {
+    width: 50px; 
+    height: 100%;
+    background: linear-gradient(180deg, #1E646E 45%, hsl(184, 100%, 9%) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: width 0.5s ease;
+    z-index: 1000;
+  }
+  
+  .menu.aberto {
+    width: 200px;
+  }
+  
+  .menu .menu-expandir {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 50px; 
+    background: linear-gradient(180deg, #1E646E 45%, #002C2F 100%);
+    border-top: 1px solid black;
+    transition: height 0.5s ease;
+    z-index: 999; 
+    opacity: 0; 
+  }
+  
+  .menu.aberto .menu-expandir {
+    height: 100px; 
+    opacity: 1; 
+  }
+  
+  .menu .icones {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  .menu .icones li {
+    position: absolute; 
+    text-align: center;
+  }
+  
+  .menu .icones li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .menu .icones li .icone {
+    position: relative;
+  }
+  
+  .menu .icones li .nome-menu {
+    position: absolute;
+    top: 60px;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff; 
+    opacity: 0;
+    display: block; 
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards; 
+    display: none;
+  }
+
+  .menu .icones li a:hover {
+    color: #1fc2db; 
+  }
+
+  .menu .icones li .nome-menu:hover {
+    color: #1fc2db; 
+  }
+
+  .menu .icones li a:hover .icone {
+    color: #1fc2db;
+  }
+
+  .menu .icones li.icone-import .nome-menu {
+    margin-left: 9px;
+  }
+
+  .menu .icones li.icone-chart .nome-menu {
+    margin-left: 6px; 
+  }
+
+  .menu .icones li.icone-database .nome-menu {
+    margin-left: 11px;
+  }
+
+  .menu .icones li.icone-brain .nome-menu {
+    margin-left: 10px; 
+  }
+
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.menu .botao-recolher {
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    position: absolute; 
+    left: 18px; 
+    top: 10px; 
+    background: transparent; 
+    border: none; 
+    outline: none;
+  }
+  
+  .menu .botao-recolher .icone-seta {
+    color: #ffffff;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+  }
+  
+  .icone-seta {
+    transition: transform 0.3s ease; 
+    transform-origin: center; 
+  }
+  
+  .icones-menu .girando {
+    transform: rotate(180deg); 
+  }
+  
+  .menu.aberto .icones li.icone-import .nome-menu,
+  .menu.aberto .icones li.icone-chart .nome-menu,
+  .menu.aberto .icones li.icone-database .nome-menu,
+  .menu.aberto .icones li.icone-brain .nome-menu {
+    display: block;
+    top: 37px; 
+    left: calc(100% + 20px); /
+  }
+  
+  .menu .configuracao {
+    position: absolute;
+    bottom: 50px;
+    left: 13px;
+    text-align: center;
+  }
+  
+  .menu .configuracao a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+  
+  .menu .configuracao .icone-cog {
+    font-size: 25px;
+  }
+  
+  .menu .configuracao .icone-cog:hover {
+    color: #1fc2db;
+  }
+
+  .menu .icones li a:hover {
+    color: #1fc2db;
+  }
+
+  .menu .icones li a:hover .icone {
+    color: #1fc2db;
+  }
+
+  .menu .configuracao .nome-menu {
+    position: absolute;
+    top: 12px;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff; 
+    display: block;
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards;
+  }
+  
+  .menu.aberto .configuracao .nome-menu {
+    opacity: 1; 
+  }
+
+  .menu .icones li.icone-import  {
+    top: 60px;
+    left: 13px;
+  }
+  
+  .menu .icones li.icone-chart {
+    top: 120px;
+    left: 12px;
+  }
+  
+  .menu .icones li.icone-database {
+    top: 180px;
+    left: 14px;
+  }
+  
+  .menu .icones li.icone-brain {
+    top: 240px;
+    left: 12px;
+  }
+
+  .content {
+    flex: 1;
+    transition: margin-left 0.5s ease;
+  }
+  
+  .menu-aberto .content {
+    margin-left: 200px; 
+  }
+  
+  .menu-aberto .row-content {
+    margin-left: 200px;
+  }
+  
+  @media (min-width: 1920px) {
+    body, html {
+      font-size: larger;
+    }
+  
+    .content {
+      max-width: 100%; 
+    }
+  
+    .menu {
+      width: 80px; 
+    }
+  
+    .menu.aberto {
+      width: 230px; 
+    }
+  
+    .menu .icones li .nome-menu {
+      font-size: 22px; 
+    }
+  
+    .menu .botao-recolher .icone-seta {
+      font-size: 28px; 
+    }
+  
+    .menu .icones {
+      font-size: 30px; 
+    }
+  
+    .menu .icones li a {
+      padding: 25px 0; 
+    }
+  
+    .menu .icones li.icone-chart {
+      left: 25px;
+    }
+    .menu .icones li.icone-import {
+      left: 25px;
+    }
+  
+    .menu .icones li.icone-database {
+      left: 29px;
+    }
+  
+    .menu .icones li.icone-brain {
+      left: 26px;
+    }
+  
+    .menu .botao-recolher {
+      left: 35px;
+    }
+  
+    .menu .configuracao {
+      left: 25px;
+    }
+  
+    .menu .configuracao .icone-cog {
+      font-size: 29px;
+    }
+
+    
+  }
+  

@@ -1,0 +1,101 @@
+.table-container {
+    max-width: 100%;
+    max-width: 1000px; 
+    margin: 10px auto;
+    border-radius: 8px; 
+    padding: 15px; 
+    overflow: hidden; 
+  }
+   
+  .table-container th,
+  .table-container td {
+    height: 60px; 
+    padding: 0 7px; 
+  }
+  
+  .table-filters {
+    max-width: 100%;
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 0 15px; 
+    box-sizing: border-box; 
+  }
+  
+  .table-filters .MuiTextField-root,
+  .table-filters .MuiAutocomplete-root {
+    margin: 0 0px; 
+    flex: 1; 
+    min-width: 200px; 
+    max-width: 280px; 
+    margin-top: 10px;
+  }
+  .filter-buttons {
+    padding: 15px;
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .filter-buttons .MuiButton-root {
+    margin: 0 10px; 
+    background-color: #1E646E; 
+    color: #fff; 
+    border: none; 
+  }
+  
+  .filter-buttons .MuiButton-root:hover {
+    background-color: #2d93a3; 
+  }
+  
+  .custom-autocomplete .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #1E646E; 
+  }
+  
+  .custom-autocomplete .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #2d93a3; 
+  }
+  
+  .custom-autocomplete .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #2d93a3; 
+  }
+  
+  .custom-autocomplete .MuiInputBase-input {
+    color: white; 
+  }
+  
+  .edit-button {
+    background-color: #2d93a3; 
+    color: #2d93a3 !important; 
+  }
+  
+  .delete-button {
+    background-color: transparent; 
+    border: 1px solid #f50057; 
+    color: #2d93a3 !important; 
+  }
+  
+  .delete-button:hover {
+    background-color: #f50057; 
+    color: white !important; 
+  }
+  
+  .edit-button:hover {
+    background-color: #2d93a3; 
+    color: white !important; 
+  }
+  
+  .edit-button {
+    height: 25px; 
+    width: 30px; 
+    border: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .delete-button {
+    height: 25px; 
+    width: 75px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+  }

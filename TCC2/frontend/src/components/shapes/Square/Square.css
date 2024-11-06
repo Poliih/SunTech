@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+.ShapeSquare {
+  width: 25vw; 
+  height: 35vh; 
+  background: #1E646E; 
+  border: 2px solid #fff; 
+  border-radius: 20px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  margin: 20px auto; 
+}
+
+.ShapeSquare .info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  color: white; 
+  font-size: 1.1rem; 
+  padding: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.ShapeSquare .info .titulo {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 10px; 
+  font-weight: bold; 
+}
+
+.ShapeSquare .info .valor {
+  font-size: 1.2rem; 
+}
+
+@media (min-width: 1920px) {
+  .ShapeSquare {
+    width: 30vw; 
+    height: 40vh; 
+  }
+
+  .ShapeSquare .info .valor {
+    font-size: 1.45rem; 
+  }
+  
+  .ShapeSquare .info .titulo {
+    font-size: 1.5rem; 
+  }
+  
+  .ShapeSquare .info .comparativo {
+    font-size: 1.1rem; 
+  }
+}
+
+.ShapeSquare:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descricao {
+  cursor: pointer; 
+  padding: 8px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+.descricao:hover {
+  background-color: #3eb7ca; 
+}

@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.shape-container {
+  display: flex; 
+  width: 85%; 
+  margin: 0 auto; 
+  padding: 0 7.5%; 
+  margin-top: 20px;
+}
+
+.shape-container > * {
+  flex: 1; 
+  margin: 0 25px;
+  min-width: 0; /
+}
+
+@media (max-width: 768px) {
+  .shape-container {
+      flex-direction: column; 
+      padding: 0 5%; 
+  }
+
+  .shape-container > * {
+      margin: 25px 0; 
+  }
+}
+
+.uploading-status {
+  color: blue;
+  font-size: 14px;
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+.upload-message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center; 
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}

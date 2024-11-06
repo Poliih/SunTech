@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.form-container {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 30px; 
+    border-radius: 15px; 
+    background-color: #2d93a352; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+.dados-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #555; 
+}
+
+input {
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    width: 100%; 
+    transition: border-color 0.3s; 
+}
+
+input:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+.submit-button {
+    padding: 12px; 
+    background-color: #1E646E; 
+    color: white; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.submit-button:hover {
+    background-color: #2d93a3; 
+}
+
+.forgot-password {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.register {
+    text-align: center; 
+    margin-top: 20px; 
+    font-size: 14px; 
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 14px; 
+    width: 100%; 
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+select option {
+    background-color: white; 
+    color: #333; 
+}
