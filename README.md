@@ -164,6 +164,102 @@ pip install requests pandas numpy scikit-learn tensorflow sqlalchemy
   }
   ```
 
+#### **Dados de Consumo da IA**
+- **Endpoint:** `/api/dados_consumo_ia`
+- **Método:** `GET`
+- **Descrição:** Retorna os dados de consumo previstos pela IA.
+- **Exemplo de Resposta:**
+  ```json
+  {
+  "consumo_previsao": 492.9715881347656,
+  "mes_ref_previsao": "2025-01-01",
+  "uc": "10010001"
+  }
+  ```
+
+#### **Comparação de Consumo**
+- **Endpoint:** `/api/comparacao_consumo`
+- **Método:** `GET`
+- **Descrição:** Retorna métricas de comparação entre consumo real e previsão, como correlação e erro médio.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "correlacao": "0.9953788339356017",
+    "mae": "25.847978573438883",
+    "media_consumo": "1441.1888166666668",
+    "media_previsao": "1420.4955148824056",
+    "mes": "Janeiro",
+    "r_squared": "0.9887252455294114",
+    "rmse": "30.825430368572075"
+  }
+  ```
+
+#### **Média de Consumo e Injetado Mensal**
+- **Endpoint:** `/api/media_consumo_injetado_mensal`
+- **Método:** `GET`
+- **Descrição:** Retorna a média mensal de consumo e energia injetada.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "01": {
+      "media_consumo": "1441,19",
+      "media_injetado": "877,74"
+    },
+    "02": {
+      "media_consumo": "1393,57",
+      "media_injetado": "855,09"
+    }
+  }
+  ```
+
+#### **Dados de Consumo (BR)**
+- **Endpoint:** `/api/dados_consumo_br`
+- **Método:** `GET`
+- **Descrição:** Retorna os dados de consumo no formato brasileiro.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "Custo_de_Disponibilidade": 30,
+    "Tipo_de_Instalacao": "Monofasico",
+    "consumo": "836,06",
+    "injetado": "806,06",
+    "mes_ref": "01/01/2023",
+    "saldo": "0,00",
+    "uc": "10030001",
+    "usina": "Usina_W"
+  }
+  ```
+
+#### **Filtrar Dados de Consumo da IA**
+- **Endpoint:** `/api/dados_consumo_ia/filter`
+- **Método:** `GET`
+- **Descrição:** Filtra os dados de consumo previstos pela IA.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "consumo_previsao": 492.9715881347656,
+    "mes_ref_previsao": "2025-01-01",
+    "uc": "10010001"
+  }
+  ```
+  
+#### **Filtrar Dados de Consumo**
+- **Endpoint:** `/api/dados_consumo/filter`
+- **Método:** `GET`
+- **Descrição:** Filtra os dados de consumo por UC, usina, e mês.
+- **Exemplo de Resposta:**
+  ```json
+  {
+    "Custo_de_Disponibilidade": 30,
+    "Tipo_de_Instalacao": "Monofásico",
+    "consumo": 836.06,
+    "injetado": 806.06,
+    "mes_ref": "2023-01-01",
+    "saldo": 0.0,
+    "uc": "10030001",
+    "usina": "Usina_W"
+  }
+  ```
 ## Licença
 
 Este projeto está licenciado sob uma Licença de Software Comercial. O uso deste software é oferecido sob pagamento e não pode ser redistribuído sem permissão.

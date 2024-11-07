@@ -2,3 +2,20 @@ venv/
 .venv/
 node_modules/
 
+TCC2/backend/config/__pycache__/config.cpython-312.pyc
+TCC2/backend/models/__pycache__/__init__.cpython-312.pyc
+TCC2/backend/models/__pycache__/ComparacaoConsumo.cpython-312.pyc
+TCC2/backend/models/__pycache__/CorrelacaoConsumo.cpython-312.pyc
+TCC2/backend/models/__pycache__/DadosAleatorios.cpython-312.pyc
+TCC2/backend/models/__pycache__/DadosConsumo.cpython-312.pyc
+TCC2/backend/models/__pycache__/DadosConsumoIA.cpython-312.pyc
+TCC2/backend/models/__pycache__/DadosGeracao.cpython-312.pyc
+TCC2/backend/models/__pycache__/EstatisticasConsumo.cpython-312.pyc
+TCC2/backend/models/__pycache__/EstatisticasDetalhadas.cpython-312.pyc
+TCC2/backend/models/__pycache__/MediasMensais.cpython-312.pyc
+TCC2/backend/models/__pycache__/PrevisaoConsumo.cpython-312.pyc
+TCC2/backend/models/__pycache__/RateioConsumo.cpython-312.pyc
+TCC2/backend/routes/__pycache__/Api.cpython-312.pyc
+TCC2/backend/tasks/__pycache__/Estatistica.cpython-312.pyc
+TCC2/backend/tasks/__pycache__/Rateio_Saldo.cpython-312.pyc
+TCC2/backend/tasks/__pycache__/Rateio.cpython-312.pyc
